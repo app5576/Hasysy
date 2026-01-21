@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F0FDF4">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#16a34a" android:elevation="4dp" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp">
+        <EditText android:id="@+id/etPackType" android:layout_width="match_parent" android:layout_height="55dp" android:hint="إضافة عبوة (كرتون، كيس...)" android:background="@drawable/oval_bg" android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btnAddPack" android:layout_width="match_parent" android:layout_height="55dp" android:text="إضافة" android:background="@drawable/btn_oval" android:textColor="#FFF"/>
+        <ListView android:id="@+id/lvPackTypes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

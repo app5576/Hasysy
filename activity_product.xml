@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F0FDF4">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#16a34a" android:elevation="4dp" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+        <LinearLayout android:id="@+id/form" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <AutoCompleteTextView android:id="@+id/etDesc" android:layout_width="match_parent" android:layout_height="55dp" android:hint="وصف المنتج" android:background="@drawable/oval_bg" android:layout_marginBottom="10dp" android:completionThreshold="1"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <EditText android:id="@+id/etQty" android:layout_width="0dp" android:layout_height="55dp" android:layout_weight="1" android:hint="الكمية" android:inputType="number" android:background="@drawable/oval_bg" android:layout_marginRight="5dp"/>
+                <Spinner android:id="@+id/spPack" android:layout_width="0dp" android:layout_height="55dp" android:layout_weight="1" android:background="@drawable/oval_bg"/>
+            </LinearLayout>
+            <EditText android:id="@+id/etPrice" android:layout_width="match_parent" android:layout_height="55dp" android:hint="السعر (اختياري)" android:inputType="numberDecimal" android:background="@drawable/oval_bg" android:layout_marginTop="10dp"/>
+            <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="55dp" android:text="حفظ المنتج" android:background="@drawable/btn_oval" android:textColor="#FFF" android:layout_marginTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/head" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/form" android:layout_marginTop="15dp" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="المنتجات المضافة" android:textStyle="bold" android:textColor="#15803d"/>
+            <ImageButton android:id="@+id/btnShare" android:layout_width="50dp" android:layout_height="50dp" android:src="@android:drawable/ic_menu_share" android:background="@drawable/btn_oval" android:tint="#FFFFFF"/>
+        </LinearLayout>
+        <ListView android:id="@+id/lvProducts" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/head" android:layout_marginTop="10dp" android:divider="#00000000" android:dividerHeight="0dp"/>
+    </RelativeLayout>
+</LinearLayout>

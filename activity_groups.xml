@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F0FDF4">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#16a34a" android:elevation="4dp" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+        <ListView android:id="@+id/lvGroups" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btnSettings" android:divider="#00000000" android:dividerHeight="0dp"/>
+        <Button android:id="@+id/btnSettings" android:layout_width="wrap_content" android:layout_height="55dp" android:text="الإعدادات" android:layout_alignParentBottom="true" android:background="@drawable/btn_oval" android:textColor="#FFF" android:paddingHorizontal="20dp"/>
+        <Button android:id="@+id/btnAddGroup" android:layout_width="65dp" android:layout_height="65dp" android:text="+" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:background="@drawable/btn_oval" android:textColor="#FFF" android:textSize="30sp"/>
+    </RelativeLayout>
+</LinearLayout>

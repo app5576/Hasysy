@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F0FDF4">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#16a34a" android:elevation="4dp" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="30dp">
+        <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="55dp" android:hint="البريد الإلكتروني" android:background="@drawable/oval_bg" android:layout_marginBottom="15dp"/>
+        <EditText android:id="@+id/etPass" android:layout_width="match_parent" android:layout_height="55dp" android:hint="كلمة المرور" android:inputType="textPassword" android:background="@drawable/oval_bg" android:layout_marginBottom="30dp"/>
+        <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="55dp" android:text="دخول" android:background="@drawable/btn_oval" android:textColor="#FFF"/>
+    </LinearLayout>
+</LinearLayout>

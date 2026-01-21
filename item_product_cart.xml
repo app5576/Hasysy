@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F1F5F9" android:padding="8dp" android:gravity="center_vertical" android:alpha="0.6">
+    <ImageButton android:id="@+id/btnRestore" android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_menu_revert" android:background="@null"/>
+    <TextView android:id="@+id/tvInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#94A3B8" android:layout_marginRight="10dp" android:gravity="right" android:background="@null"/>
+</LinearLayout>

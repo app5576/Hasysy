@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="#F8FAFC">
+    <AutoCompleteTextView android:id="@+id/etDesc" android:layout_width="match_parent" android:layout_height="55dp" android:hint="ماذا (اسم المنتج...)" android:background="@drawable/oval_bg" android:layout_marginBottom="10dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <EditText android:id="@+id/etQty" android:layout_width="0dp" android:layout_height="55dp" android:layout_weight="1" android:hint="الكمية" android:inputType="number" android:background="@drawable/oval_bg" android:layout_marginRight="5dp"/>
+        <Spinner android:id="@+id/spPack" android:layout_width="0dp" android:layout_height="55dp" android:layout_weight="1" android:background="@drawable/oval_bg"/>
+    </LinearLayout>
+    <EditText android:id="@+id/etPrice" android:layout_width="match_parent" android:layout_height="55dp" android:hint="السعر (اختياري)" android:inputType="numberDecimal" android:background="@drawable/oval_bg" android:layout_marginTop="10dp"/>
+    <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="55dp" android:text="إضافة للمستلزمات" android:background="@drawable/btn_oval" android:textColor="#FFF" android:layout_marginTop="15dp"/>
+    <ListView android:id="@+id/lvProducts" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" android:dividerHeight="10dp" android:divider="#00000000"/></LinearLayout>
